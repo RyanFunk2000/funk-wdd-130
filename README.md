@@ -1,2 +1,4 @@
-# funk-wdd-130
-This is my final project site for WDD 130 at BYU Idaho.
+# WDD 130 Final Project
+Owner: Ryan Funk
+
+Semester: Winter 2021
