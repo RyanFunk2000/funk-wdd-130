@@ -1,7 +1,7 @@
 :root {
     /* Settings */
     --spacing: 15px;
-    --font-size: 1.35rem;
+    --font-size: 1.4rem;
     /* Normal Colors */
     --background-color: #CCF6EE;
     --alt-background-color: #86DEB7;
@@ -15,6 +15,7 @@
     --dark-font-color: white;
     --dark-alt-font-color: gainsboro;
     --dark-border-color: white;
+    --dark-navigation-color: ;
 }
 
 html, body {
@@ -49,6 +50,10 @@ header {
     justify-content: center;
     font-family: 'Roboto Mono', monospace;
     text-align: center;
+}
+
+#logo-dark {
+    display: none;
 }
 
 header a {
@@ -201,6 +206,11 @@ input,textarea {
 #about-us-content>img {
     float: left;
     margin: 0 25px 25px 0;
+}
+
+#about-us-content {
+    display: flex;
+    align-items: center;
 }
 
 .cards {
@@ -399,6 +409,15 @@ body.dark-mode header {
 
 body.dark-mode header a {
     color: var(--dark-alt-font-color);
+}
+
+body.dark-mode #logo {
+    display: none;
+}
+
+body.dark-mode #logo-dark {
+    display: inline;
+    justify-self: center;
 }
 
 body.dark-mode main {
