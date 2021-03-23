@@ -8,192 +8,246 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Site Planning - BYUI</title>
         <link rel="preconnect" href="https://fonts.gstatic.com">
-        <!-- YOU WILL EDIT THE CODE BELOW TO LOAD YOUR FONTS -->
         <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=DotGothic16&display=swap" rel="stylesheet">
-        <!-- END EDITS -->
+        <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/style-guide.css">
+        <script src="js/dark-mode.js"></script>
     </head>
     <body>
-        <h1>Final Project Style Guide</h1>
-        <button>Toggle Dark Mode</button>
-        <div>
-            <h2>Normal Colors</h2>
-            <div class="color-wrapper">
-                <div class="title">
-                    Background
-                </div>
-                <div class="color"></div>
-                <div>
-                    #CCF6EE
-                </div>
+        <header>
+            <div id="logo-wrapper">
+                <a href="index.html">
+                    <img src="assets/logo.png" id="logo">
+                    <img src="assets/logo-dark.png" id="logo-dark">
+                    <figcaption>Allen Ship Center</figcaption>
+                </a>
             </div>
-            <div class="color-wrapper">
-                <div class="title">
-                    Alt Background
-                </div>
-                <div class="color"></div>
-                <div>
-                    #86DEB7
-                </div>
-            </div>
-            <div class="color-wrapper">
-                <div class="title">
-                    Primary
-                </div>
-                <div class="color"></div>
-                <div>
-                    #38502A
-                </div>
-            </div>
-            <div class="color-wrapper">
-                <div class="title">
-                    Alt Primary
-                </div>
-                <div class="color"></div>
-                <div>
-                    #2C634C
-                </div>
-            </div>
-        </div>
-        <div>
-            <h2>Dark Mode Colors</h2>
-            <div class="color-wrapper">
-                <div class="title">
-                    Background
-                </div>
-                <div class="color"></div>
-                <div>
-                    #1C2815
-                </div>
-            </div>
-            <div class="color-wrapper">
-                <div class="title">
-                    Alt Background
-                </div>
-                <div class="color"></div>
-                <div>
-                    #337157
-                </div>
-            </div>
-            <div class="color-wrapper">
-                <div class="title">
-                    Primary
-                </div>
-                <div class="color"></div>
-                <div>
-                    #35C081
-                </div>
-            </div>
-            <div class="color-wrapper">
-                <div class="title">
-                    Alt Primary
-                </div>
-                <div class="color"></div>
-                <div>
-                    #56DCC6
-                </div>
-            </div>
-        </div>
-        <div>
-            <h2>Fonts</h2>
-            <p>
-                I have chosen to use the following fonts for my site:
-            </p>
-            <ul>
-                <li>
-                    Roboto+Mono: Used for headlines.
-                </li>
-                <li>
-                    DotGothic16: Used for the primary font.
-                </li>
-            </ul>
-        </div>
-        <div>
-            <h2>Elevator Pitch</h2>
-            <p>
-                Hi, there! My name is Ryan Funk, and I work for Allen Ship Center which helps store and deliver shipments. Have you been to a ship center when delivering a 
-                package, and if so, was the process complicated and confusing? At Allen Ship Center, we put a heavy focus on making our customer’s experience at our 
-                locations simple and easy. We want to make sure that creating a shipment is straightforward and clear to new customers to provide a swift and satisfactory 
-                service. Are you interested in connecting with the company to learn more about their business?
-            </p>
-        </div>
-        <div>
-            <h2>Purpose Statement</h2>
-            <p>
-                The website for Allen Ship Center could fulfill more than more purpose. It may provide a descriptive resource for relevant information. This can include 
-                details regarding the company, its staff, history, policies, tools used in the workplace, and answers to general inquiries from customers. Ultimately, 
-                because Allen Ship Center is a business, the website needs to function to help the company earn an income. This includes providing their locations, 
-                offers and prices, reviews, and general details to entice potential customers to use their service and revisit it. The site needs to be concise and 
-                easy to navigate to leave an admirable impression.
-            </p>
-        </div>
-        <div>
-            <h2>Audience Statement</h2>
-            <p>
-                One demographic that Allen Ship Center appeals to are individuals who have connections over long distance. These people desire to connect beyond virtual 
-                communication. They may want to exchange goods but have trouble because of travel (this can also apply to shorter distances during COVID-19 when social 
-                interaction is more difficult). Allen Ship’s service makes it so that people can deliver these shipments. Because the company wants to reach out to as 
-                many people as possible, the website will be compatible with all common devices. Customers will have access to the services offered on the site at any 
-                place and any time.
-            </p>
-        </div>
-        <div>
-            <h2>Misson Statement</h2>
-            <p>
-                The goal of Allen Ship Center is to provide an approachable shipping service for the general market. The company will be primarily based in the United States, 
-                at least until it’s succeeded well enough to expand further international. Allen Ship recognizes the complications and confusion that can arise during shipment. 
-                Thus, it will intend to stand out in the competitive shipping market by making the shipment creation process on location straightforward and simple. The business 
-                wants a future where people can connect with distanced friends, family, and professional contacts beyond virtual communication through physical exchange. 
-            </p>
-        </div>
-        <div>
-            <h2>Persona and Scenario Ideas</h2>
-            <ol>
-                <li>Persona 1</li>
+            <nav>
                 <ul>
                     <li>
-                    Name = Robert
+                        <a href="about.html">
+                            About Us
+                        </a>
                     </li>
                     <li>
-                    Age = 19
+                        <a href="subpage-1.html">
+                            Services
+                        </a>
                     </li>
                     <li>
-                    Gender = Male
+                        <a href="subpage-2.html">
+                            Local Gifts
+                        </a>
                     </li>
                     <li>
-                    Motivations = Desires connection with his family and friends during COVID-19.
-                    </li>
-                    <li>
-                    Goals = Learn how to make shipments for the first time.
-                    </li>
-                    <li>
-                    Technical Abilities = Due to age, proficient enough at using technology.
+                        <a href="contact-us.html">
+                            Contact Us
+                        </a>
                     </li>
                 </ul>
-                <li>Persona 2</li>
+            </nav>
+        </header>
+        <section id="style-content">
+            <h1>Final Project Style Guide</h1>
+            <button>Toggle Dark Mode</button>
+            <div>
+                <h2>Normal Colors</h2>
+                <div class="color-wrapper">
+                    <div class="title">
+                     Background
+                    </div>
+                    <div class="color"></div>
+                    <div>
+                        #CCF6EE
+                    </div>
+                </div>
+                <div class="color-wrapper">
+                    <div class="title">
+                        Alt Background
+                    </div>
+                    <div class="color"></div>
+                    <div>
+                        #86DEB7
+                    </div>
+                </div>
+                <div class="color-wrapper">
+                    <div class="title">
+                        Primary
+                    </div>
+                    <div class="color"></div>
+                    <div>
+                        #38502A
+                    </div>
+                </div>
+                <div class="color-wrapper">
+                    <div class="title">
+                        Alt Primary
+                    </div>
+                    <div class="color"></div>
+                    <div>
+                        #2C634C
+                    </div>
+                </div>
+            </div>
+            <div>
+                <h2>Dark Mode Colors</h2>
+                <div class="color-wrapper">
+                    <div class="title">
+                        Background
+                    </div>
+                    <div class="color"></div>
+                    <div>
+                        #1C2815
+                    </div>
+                </div>
+                <div class="color-wrapper">
+                    <div class="title">
+                        Alt Background
+                    </div>
+                    <div class="color"></div>
+                    <div>
+                        #337157
+                    </div>
+                </div>
+                <div class="color-wrapper">
+                    <div class="title">
+                        Primary
+                    </div>
+                    <div class="color"></div>
+                    <div>
+                        #35C081
+                    </div>
+                </div>
+                <div class="color-wrapper">
+                    <div class="title">
+                        Alt Primary
+                    </div>
+                    <div class="color"></div>
+                    <div>
+                        #56DCC6
+                    </div>
+                </div>
+            </div>
+            <div>
+                <h2>Fonts</h2>
+                <p>
+                    I have chosen to use the following fonts for my site:
+                </p>
                 <ul>
                     <li>
-                        Name = Elizabeth
+                        Roboto+Mono: Used for headlines.
                     </li>
                     <li>
-                        Age = 64
-                    </li>
-                    <li>
-                        Gender = Female
-                    </li>
-                    <li>
-                        Motivations = Desires connection with her family and friends while living alone.
-                    </li>
-                    <li>
-                        Goals = Become familiar with modern shipping procedures to make shipments.
-                    </li>
-                    <li>
-                        Technical Abilities = Less proficient with technology because of age.
+                        DotGothic16: Used for the primary font.
                     </li>
                 </ul>
-            </ol>
-        </div>
+            </div>
+            <div>
+                <h2>Elevator Pitch</h2>
+                <p>
+                    Hi, there! My name is Ryan Funk, and I work for Allen Ship Center which helps store and deliver shipments. Have you been to a ship center when delivering a 
+                    package, and if so, was the process complicated and confusing? At Allen Ship Center, we put a heavy focus on making our customer’s experience at our 
+                    locations simple and easy. We want to make sure that creating a shipment is straightforward and clear to new customers to provide a swift and satisfactory 
+                    service. Are you interested in connecting with the company to learn more about their business?
+                </p>
+            </div>
+            <div>
+                <h2>Purpose Statement</h2>
+                <p>
+                    The website for Allen Ship Center could fulfill more than more purpose. It may provide a descriptive resource for relevant information. This can include 
+                    details regarding the company, its staff, history, policies, tools used in the workplace, and answers to general inquiries from customers. Ultimately, 
+                    because Allen Ship Center is a business, the website needs to function to help the company earn an income. This includes providing their locations, 
+                    offers and prices, reviews, and general details to entice potential customers to use their service and revisit it. The site needs to be concise and 
+                    easy to navigate to leave an admirable impression.
+                </p>
+            </div>
+            <div>
+                <h2>Audience Statement</h2>
+                <p>
+                    One demographic that Allen Ship Center appeals to are individuals who have connections over long distance. These people desire to connect beyond virtual 
+                    communication. They may want to exchange goods but have trouble because of travel (this can also apply to shorter distances during COVID-19 when social 
+                    interaction is more difficult). Allen Ship’s service makes it so that people can deliver these shipments. Because the company wants to reach out to as 
+                    many people as possible, the website will be compatible with all common devices. Customers will have access to the services offered on the site at any 
+                    place and any time.
+                </p>
+            </div>
+            <div>
+                <h2>Misson Statement</h2>
+                <p>
+                    The goal of Allen Ship Center is to provide an approachable shipping service for the general market. The company will be primarily based in the United States, 
+                    at least until it’s succeeded well enough to expand further international. Allen Ship recognizes the complications and confusion that can arise during shipment. 
+                    Thus, it will intend to stand out in the competitive shipping market by making the shipment creation process on location straightforward and simple. The business 
+                    wants a future where people can connect with distanced friends, family, and professional contacts beyond virtual communication through physical exchange. 
+                </p>
+            </div>
+            <div>
+                <h2>Persona and Scenario Ideas</h2>
+                <ol>
+                    <li>Persona 1</li>
+                    <ul>
+                        <li>
+                        Name = Robert
+                        </li>
+                        <li>
+                        Age = 19
+                        </li>
+                        <li>
+                        Gender = Male
+                        </li>
+                        <li>
+                        Motivations = Desires connection with his family and friends during COVID-19.
+                        </li>
+                        <li>
+                        Goals = Learn how to make shipments for the first time.
+                        </li>
+                        <li>
+                        Technical Abilities = Due to age, proficient enough at using technology.
+                        </li>
+                    </ul>
+                    <li>Persona 2</li>
+                    <ul>
+                        <li>
+                            Name = Elizabeth
+                        </li>
+                        <li>
+                            Age = 64
+                        </li>
+                        <li>
+                            Gender = Female
+                        </li>
+                        <li>
+                            Motivations = Desires connection with her family and friends while living alone.
+                        </li>
+                        <li>
+                            Goals = Become familiar with modern shipping procedures to make shipments.
+                        </li>
+                        <li>
+                            Technical Abilities = Less proficient with technology because of age.
+                        </li>
+                    </ul>
+                </ol>
+            </div>
+        </section>
+        <footer>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="style-guide.html">
+                            Style Guide
+                        </a>
+                    </li>
+                    <li>
+                        <a href="wireframes.html">
+                            Wireframes
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <div id="legal">
+                &copy; 2021 Allen Ship Center. All Rights Reserved.
+            </div>
+        </footer>
         <script>
             /**
              * This script adds a listener to the dark mode toggle button.

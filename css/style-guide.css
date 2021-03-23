@@ -1,15 +1,21 @@
-/* YOU WILL EDIT ALL THE COLORS BELOW */
 :root {
+    /* Settings */
+    --spacing: 15px;
+    --font-size: 1.4rem;
     /* Normal Colors */
     --background-color: #CCF6EE;
     --alt-background-color: #86DEB7;
-    --primary-color: #38502A;
-    --alt-primary-color: #2C634C;
+    --font-color: #38502A;
+    --alt-font-color: #2C634C;
+    --border-color: black;
+    --navigation-color: #a1cfdb;
     /* Dark Mode Colors */
     --dark-background-color: #1C2815;
     --dark-alt-background-color: #337157;
-    --dark-primary-color: #35C081;
-    --dark-alt-primary-color: #56DCC6;
+    --dark-font-color: #35C081;
+    --dark-alt-font-color: #56DCC6;
+    --dark-border-color: white;
+    --dark-navigation-color: ;
 }
 
 html, body {
@@ -18,22 +24,80 @@ html, body {
     text-rendering: optimizeLegibility;
 }
 
+body {
+    display: flex;
+    flex-direction: column;
+    font-size: 62.5%;
+    font-family: 'DotGothic16', sans-serif;
+}
+
+header {
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: 1fr auto;
+    font-size: var(--font-size);
+    padding: var(--spacing);
+    border-bottom: 1px solid var(--border-color);
+    color: var(--alt-font-color);
+    background-color: var(--alt-background-color);
+}
+
+#logo-wrapper {
+    display: flex;
+    justify-content: center;
+    font-family: 'Roboto Mono', monospace;
+    text-align: center;
+}
+
+#logo-dark {
+    display: none;
+}
+
+header a {
+    text-decoration: none;
+    display: block;
+    color: var(--alt-font-color);
+}
+
+header nav {
+    display: flex;
+    align-items: center;
+    margin: -15px -15px -15px auto;
+    background-color: var(--navigation-color);
+}
+
+header nav ul {
+    margin: 0;
+    padding: 10px;
+    list-style-type: none;
+}
+
+header nav ul li {
+    display: block;
+    padding: 3px;
+    margin: 5px;
+    border: 0 solid;
+    border-radius: 10px;
+    background-color: var(--background-color);
+    text-align: center;
+}
+
 *,
 *:before,
 *:after {
   box-sizing: inherit;
 }
 
-body {
+#style-content {
     font-size: 62.5%;
     padding: 2rem 1rem;
     text-align: center;
     font-family: 'DotGothic16', sans-serif; /* EDIT */
     background-color: var(--background-color);
-    color: var(--primary-color);
+    color: var(--font-color);
 }
 
-body h1 {
+#style-content h1 {
     margin-bottom: 3rem;
     font-size: 2.5rem;
     text-decoration: underline;
@@ -41,111 +105,209 @@ body h1 {
     font-family: 'Roboto Mono', monospace; /* EDIT */
 }
 
-body h2 {
+#style-content h2 {
     font-size: 1.75rem;
     font-family: 'Roboto Mono', monospace; /* EDIT */
 }
 
-body button {
+#style-content button {
     font-size: 1.15rem;
     padding: 0.75rem 1.5rem;
-    color: var(--alt-primary-color);
-    border: 1px solid var(--primary-color);
+    color: var(--alt-font-color);
+    border: 1px solid var(--border-color);
     background-color: var(--alt-background-color);
     cursor: pointer;
     font-family: 'DotGothic16', sans-serif; /* EDIT */
 }
 
-body button:hover {
+#style-content button:hover {
     background-color: var(--background-color);
 }
 
-body > div {
+#style-content > div {
     text-align: left;
     font-size: 1.15rem;
     margin: 1rem auto;
-    max-width: 750px;
+    max-width: 1000px;
     border-top: 1px solid var(--alt-background-color);
 }
 
-body > div:first-of-type {
+#style-content > div:first-of-type {
     border-top: 0px transparent;
 }
 
-body div .color-wrapper .color {
+#style-content div .color-wrapper .color {
     width: 100%;
     height: 150px;
     margin: 0.75rem 0;
-    border: 1px solid var(--primary-color);
+    border: 1px solid var(--border-color);
 }
 
-body > div:nth-of-type(1), body > div:nth-of-type(2) {
+#style-content > div:nth-of-type(1), #style-content > div:nth-of-type(2) {
     display: grid;
     grid-template-rows: auto auto;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-column-gap: 15px;
 }
 
-body > div:nth-of-type(1) h2, body > div:nth-of-type(2) h2 {
+#style-content > div:nth-of-type(1) h2, #style-content > div:nth-of-type(2) h2 {
     grid-row: 1;
     grid-column: 1/5;
 }
 
-body > div:nth-of-type(1) .color-wrapper:nth-of-type(1) .color {
+#style-content > div:nth-of-type(1) .color-wrapper:nth-of-type(1) .color {
     background-color: var(--background-color);
 }
 
-body > div:nth-of-type(1) .color-wrapper:nth-of-type(2) .color {
+#style-content > div:nth-of-type(1) .color-wrapper:nth-of-type(2) .color {
     background-color: var(--alt-background-color);
 }
 
-body > div:nth-of-type(1) .color-wrapper:nth-of-type(3) .color {
-    background-color: var(--primary-color);
+#style-content > div:nth-of-type(1) .color-wrapper:nth-of-type(3) .color {
+    background-color: var(--font-color);
 }
 
-body > div:nth-of-type(1) .color-wrapper:nth-of-type(4) .color {
-    background-color: var(--alt-primary-color);
+#style-content > div:nth-of-type(1) .color-wrapper:nth-of-type(4) .color {
+    background-color: var(--alt-font-color);
 }
 
-body > div:nth-of-type(2) .color-wrapper:nth-of-type(1) .color {
+#style-content > div:nth-of-type(2) .color-wrapper:nth-of-type(1) .color {
     background-color: var(--dark-background-color);
 }
 
-body > div:nth-of-type(2) .color-wrapper:nth-of-type(2) .color {
+#style-content > div:nth-of-type(2) .color-wrapper:nth-of-type(2) .color {
     background-color: var(--dark-alt-background-color);
 }
 
-body > div:nth-of-type(2) .color-wrapper:nth-of-type(3) .color {
-    background-color: var(--dark-primary-color);
+#style-content > div:nth-of-type(2) .color-wrapper:nth-of-type(3) .color {
+    background-color: var(--dark-font-color);
 }
 
-body > div:nth-of-type(2) .color-wrapper:nth-of-type(4) .color {
-    background-color: var(--dark-alt-primary-color);
+#style-content > div:nth-of-type(2) .color-wrapper:nth-of-type(4) .color {
+    background-color: var(--dark-alt-font-color);
 }
 
-body.dark-mode {
-    background-color: var(--dark-background-color);
-    color: var(--dark-primary-color);
+footer {
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: auto 1fr auto;
+    font-size: var(--font-size);
+    border-top: 1px solid var(--border-color);
+    padding: var(--spacing);
+    color: var(--alt-font-color);
+    background-color: var(--alt-background-color);
 }
 
-body.dark-mode button {
-    color: var(--dark-alt-primary-color);
-    border: 1px solid var(--dark-primary-color);
+footer a {
+    text-decoration: none;
+    color: var(--alt-font-color);
+}
+
+footer #legal {
+    grid-row: 1;
+    grid-column: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Roboto Mono', monospace;
+}
+
+footer nav {
+    grid-row: 1;
+    grid-column: 1;
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    margin: -15px auto -15px -15px;
+    background-color: var(--navigation-color);
+}
+
+footer nav ul {
+    margin: 0;
+    padding: 10px;
+    list-style-type: none;
+}
+
+footer nav ul li {
+    display: block;
+    padding: 3px;
+    margin: 5px;
+    border: 0 solid;
+    border-radius: 10px;
+    background-color: var(--background-color);
+    text-align: center;
+}
+
+body.dark-mode header {
+    border-bottom: 1px solid var(--dark-border-color);
+    color: var(--dark-alt-font-color);
     background-color: var(--dark-alt-background-color);
 }
 
-body.dark-mode button:hover {
+body.dark-mode header a {
+    color: var(--dark-alt-font-color);
+}
+
+body.dark-mode #logo {
+    display: none;
+}
+
+body.dark-mode #logo-dark {
+    display: inline;
+    justify-self: center;
+}
+
+body.dark-mode main {
+    color: var(--dark-font-color);
     background-color: var(--dark-background-color);
 }
 
-body.dark-mode > div {
+body.dark-mode footer {
+    border-top: 1px solid var(--dark-border-color);
+    color: var(--dark-alt-font-color);
+    background-color: var(--dark-alt-background-color);
+}
+
+body.dark-mode footer a {
+    color: var(--dark-alt-font-color);
+}
+
+body.dark-mode footer #dark-mode .icon svg path {
+    fill: var(--dark-background-color);
+}
+
+body.dark-mode footer #dark-mode #tgl-wrapper .tgl + .tgl-btn {
+    background-color: var(--dark-background-color);
+    border: 1px solid var(--dark-border-color);
+}
+
+body.dark-mode footer #dark-mode #tgl-wrapper .tgl + .tgl-btn:after {
+    background-color: var(--dark-border-color);
+}
+
+body.dark-mode #style-content {
+    background-color: var(--dark-background-color);
+    color: var(--dark-font-color);
+}
+
+body.dark-mode #style-content button {
+    color: var(--dark-alt-font-color);
+    border: 1px solid var(--dark-border-color);
+    background-color: var(--dark-alt-background-color);
+}
+
+body.dark-mode #style-content button:hover {
+    background-color: var(--dark-background-color);
+}
+
+body.dark-mode #style-content > div {
     border-top: 1px solid var(--dark-alt-background-color);
 }
 
-body.dark-mode > div:first-of-type {
+body.dark-mode #style-content > div:first-of-type {
     border-top: 0px transparent;
 }
 
-body.dark-mode div .color-wrapper .color {
-    border: 1px solid var(--dark-primary-color);
+body.dark-mode #style-content div .color-wrapper .color {
+    border: 1px solid var(--dark-border-color);
 }

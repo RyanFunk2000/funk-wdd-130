@@ -10,10 +10,10 @@
     --border-color: black;
     --navigation-color: #a1cfdb;
     /* Dark Mode Colors */
-    --dark-background-color: black;
-    --dark-alt-background-color: darkslategray;
-    --dark-font-color: white;
-    --dark-alt-font-color: gainsboro;
+    --dark-background-color: #1C2815;
+    --dark-alt-background-color: #337157;
+    --dark-font-color: #35C081;
+    --dark-alt-font-color: #56DCC6;
     --dark-border-color: white;
     --dark-navigation-color: ;
 }
