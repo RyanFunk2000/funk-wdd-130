@@ -15,7 +15,7 @@
     --dark-font-color: #35C081;
     --dark-alt-font-color: #56DCC6;
     --dark-border-color: white;
-    --dark-navigation-color: ;
+    --dark-navigation-color: #366f7e;
 }
 
 html, body {
@@ -257,6 +257,14 @@ body.dark-mode #logo-dark {
     justify-self: center;
 }
 
+body.dark-mode header nav {
+    background-color: var(--dark-navigation-color);
+}
+
+body.dark-mode header nav ul li {
+    background-color: var(--dark-background-color);
+}
+
 body.dark-mode main {
     color: var(--dark-font-color);
     background-color: var(--dark-background-color);
@@ -270,6 +278,14 @@ body.dark-mode footer {
 
 body.dark-mode footer a {
     color: var(--dark-alt-font-color);
+}
+
+body.dark-mode footer nav {
+    background-color: var(--dark-navigation-color);
+}
+
+body.dark-mode footer nav ul li {
+    background-color: var(--dark-background-color);
 }
 
 body.dark-mode footer #dark-mode .icon svg path {
