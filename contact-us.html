@@ -15,9 +15,9 @@
     <header>
         <div id="logo-wrapper">
             <a href="index.html">
-                <img src="assets/logo.png" id="logo">
-                <img src="assets/logo-dark.png" id="logo-dark">
-                <figcaption>Allen Ship Center</figcaption>
+                <img src="assets/logo.png" alt="Allen Ship Center's logo" id="logo">
+                <img src="assets/logo-dark.png" alt="Allen Ship Center's logo" id="logo-dark"><br>
+                Allen Ship Center
             </a>
         </div>
         <nav>
@@ -57,15 +57,15 @@
             </div>
             <form method="GET" action="contact-us.html" id="contact-form">
                 <div id="contact-name">
-                    <label for="name">Name</label></br>
+                    <label for="name">Name</label><br>
                     <input id="name" type="text" placeholder="Insert your full name">
                 </div>
                 <div id="contact-subject">
-                    <label for="subject">Subject</label></br>
+                    <label for="subject">Subject</label><br>
                     <input id="subject" type="text" placeholder="Insert topic of message">
                 </div>
                 <div id="contact-message">
-                    <label for="message">Message</label></br>
+                    <label for="message">Message</label><br>
                     <textarea rows="5" cols="50" id="message" placeholder="Insert details of message"></textarea>
                 </div>
                 <h3 id="contact-question">What form of contact info would you us like us to contact back to?</h3>
@@ -78,9 +78,9 @@
                 </div>
                 <div id="contact-phone">
                     <label for="radio-2">Phone</label>
-                    <input id="radio-2" class="radio" type="radio" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" name="call-back">
+                    <input id="radio-2" class="radio" type="radio" name="call-back">
                     <div class="contact-info">
-                        <input type="tel" id="phone" placeholder="Insert Phone Number">
+                        <input type="tel" id="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="Insert Phone Number">
                     </div>
                 </div>
                 <input type="submit" value="Send Message" id="contact-form-submit">
